@@ -1,0 +1,22 @@
+<div class="container user-list-container">
+  <div class="row row-cols-1 row-cols-md-5 g-4">
+    <div *ngFor="let user of userListArray; index as i" class="col">
+      <div  class="card h-100">
+          <img *ngIf="i==0" src="../../assets/images/headshot-beautiful-carefree-smiling-gorgeous-lady-with-dark-hair-red-lips.jpg" class="card-img-top" alt="...">
+          <img *ngIf="i==1" src="../../assets/images/cheerful-indian-businessman-smiling-closeup-portrait-jobs-career-campaign.jpg" class="card-img-top" alt="...">
+          <img *ngIf="i==2" src="../../assets/images/woman-takes-images-holding-photographic-camera-hands.jpg" class="card-img-top" alt="...">
+          <img *ngIf="i==3" src="../../assets/images/young-beautiful-woman-sitting-table.jpg" class="card-img-top" alt="...">
+          <img *ngIf="i==4" src="../../assets/images/funny-brunette-girl-portrait-striped-background.jpg" class="card-img-top" alt="...">
+          <img *ngIf="i==5" src="../../assets/images/portrait-beautiful-young-woman-looking-camera.jpg" class="card-img-top" alt="...">
+          <img *ngIf="i==6" src="../../assets/images/woman-takes-images-holding-photographic-camera-hands.jpg" class="card-img-top" alt="...">
+          <img *ngIf="i==7" src="../../assets/images/young-beautiful-woman-sitting-table.jpg" class="card-img-top" alt="...">
+          <img *ngIf="i==8" src="../../assets/images/funny-brunette-girl-portrait-striped-background.jpg" class="card-img-top" alt="...">
+          <img *ngIf="i==9" src="../../assets/images/headshot-beautiful-carefree-smiling-gorgeous-lady-with-dark-hair-red-lips.jpg" class="card-img-top" alt="...">
+        <div class="card-body text-center">
+          <h5 class="card-title">Name:{{user.name}}</h5>
+          <h6 class="card-title">Company:{{user.company.name}}</h6>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
